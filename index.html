@@ -1,10 +1,10 @@
 <!DOCTYPE html>
+<html>
 
 <head>
     <title>Discussion Portal</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="discuss.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 
 <body>
@@ -20,8 +20,8 @@
         </div>
         <div class="twoBox" style="display:block" id="rightContainer">
             <div id="toggleDisplay">
-                <h1>Welcome to Discussion Portal !</h1>
-                <p>Enter a subject and question to get started</p>
+                <h1 style="border-radius: 3px;">Welcome to Discussion Portal !</h1>
+                <h6>Enter a subject and question to get started</h6>
                 <div id="rightDiv">
                     <input type="text" id="subject" placeholder="Subject" />
                 </div>
@@ -32,28 +32,24 @@
                     <button type="submit" id="submitBtn">Submit</button>
                 </div>
             </div>
-            <div id="allRightResponse">
-                <div id="respondQue">
-                </div>
-                <div id="resolveHolder">
-                    <button id="resolveBtn">Resolve</button>
-                    <button id="upvote">Upvote</button>
-                    <button id="downvote">Downvote</button>
+            <div class="questionPanel" id="respondQue">
+            </div>
+            <div class="questionPanel" id="resolveHolder">
+                <button id="resolveQuestion">Resolve</button>
+                <button id="upvote">Upvote</button>
+                <button id="downvote">Downvote</button>
 
-
-                </div>
-                <label id="res">Responses</label>
-                <div id="respondAns">
-                </div>
-                <div id="commentHolder" style="display:none">
-                    <input id="pickName" placeholder="Name Please..." />
-                    <textarea id="pickComment" placeholder="Please write your answer here..."></textarea>
-                    <button id="commentBtn">Comment</button>
-                </div>
+            </div>
+            <div class="questionPanel" id="respondAns">
+            </div>
+            <div class="questionPanel" id="commentHolder" style="display:none">
+                <input id="pickName" placeholder="Name Please..." />
+                <textarea id="pickComment" placeholder="Please write your answer here..."></textarea>
+                <button id="commentBtn">Comment</button>
             </div>
         </div>
     </div>
+    <script src="discuss.js"></script>
 </body>
-<script src="index.js"></script>
 
 </html>
